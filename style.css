@@ -1,0 +1,68 @@
+#step2,
+#result {
+  display: none;
+}
+
+.total-price {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.btn-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#nextBtn,
+#submitBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#nextBtn:disabled,
+#submitBtn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#nextBtn:hover,
+#submitBtn:hover {
+  background-color: #0056b3;
+}
+
+#errorMsg {
+  color: red;
+  margin-top: 10px;
+}
+
+#step1,
+#step2 {
+  margin-bottom: 20px;
+}
+
+#step1 input:invalid {
+  border: 2px solid red;
+}
+
+#step1 input:valid {
+  border: 2px solid green;
+}
+
+#step1 input[type="text"]:valid ~ .next-btn-container #nextBtn {
+  background-color: #44c767;
+  cursor: pointer;
+}
+
+#step1 input[type="text"]:invalid ~ .next-btn-container #nextBtn {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+  

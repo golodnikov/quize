@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quize</title>
+</head>
+<body>
+    <div id="step1" class="step">
+        <input id="firstName" class="field" type="text" placeholder="Имя">
+        <input id="lastName" class="field" type="text" placeholder="Фамилия">
+        <input id="phone" class="field" type="text" placeholder="Телефон">
+        <input id="email" class="field" type="email" placeholder="Email">
+        <button id="nextBtn" class="btn" disabled>Далее</button>
+    </div>
+      
+    <div id="step2" class="step">
+        <select id="product" class="field" required>
+            <option value="Диски для авто">Диски для авто</option>
+            <option value="Резина для авто">Резина для авто</option>
+        </select>
+        <input id="quantity" class="field" type="number" placeholder="Количество" required>
+        <label><input id="checkbox" type="checkbox"> Установка + 1500</label>
+        <p id="totalPrice"></p>
+        <button id="submitBtn" class="btn" disabled>Отправить</button>
+    </div>
+      
+    <div id="result" class="step"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+  
